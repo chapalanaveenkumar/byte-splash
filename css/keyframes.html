@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .key{
+            background-color: red;
+            padding: 50px;
+            width: 5rem;
+            animation: firstkey 5s ease-out 2s infinite;
+        }
+        @keyframes firstkey {
+            0%{
+                
+                margin-top: -10rem;
+            }
+            20%{
+                
+                margin-top: -5rem;
+            }
+            50%{ 
+            transform: scale(1.7);}
+            100%{
+                
+                margin-top: 0rem;
+                transform: rotate(360deg);
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="key">
+
+    </div>
+</body>
+</html>

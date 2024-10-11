@@ -1,0 +1,37 @@
+h1{
+    color: aqua;
+    text-align:center;
+    text-transform:capitalize;
+    text-decoration:underline ;
+    cursor:pointer;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;;
+}
+p{
+    width: 100px;
+    height:100px;
+
+
+    overflow:auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 1000
+
+.mulish-<uniquifier> {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:20px;
+  font-style;
+}

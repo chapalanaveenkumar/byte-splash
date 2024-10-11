@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            display: flex;
+            flex-direction: row;
+            background-color: #f8f9fab2;
+            box-shadow: #32325d40 0 50px 100px -20px, #0000004d 0 30px 60px -30px, #0a254059 0 -2px 6px inset;
+        }
+
+        svg {
+            vertical-align: middle;
+        }
+
+        .middle {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 40px;
+            padding: 5px;
+            justify-content: flex-start;
+        }
+
+        .header {
+            padding-left: 40px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+        }
+
+
+        .an:hover {
+            background-color: #0071bd;
+            border-radius: 5px;
+            color: white;
+
+        }
+
+        .an svg {
+            fill: #0071bd;
+            transition: fill 0.3s;
+        }
+
+        /* Hover effect for a tag with svg (phone number) */
+        .header.contact:hover .an svg {
+            fill: white;
+        }
+
+        /* Hover effect for a tag with svg (email) */
+        .header.mail:hover .an svg {
+            fill: white;
+        }
+
+        span {
+
+            font-weight: 600;
+            font-family: Open Sans, sans-serif;
+        }
+
+        .an {
+            text-decoration: none;
+            padding: 8px;
+            color: #3f51b5;
+        }
+
+        .left {
+            max-width: 60%;
+        }
+
+        .image {
+            max-width: 30%;
+        }
+
+        .get {
+            font-family: Mulish, sans-serif;
+            color: #fff !important;
+            background-color: #0661a7;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            font-size: 1.3vw;
+            font-weight: 500;
+            border-radius: 2px;
+        }
+
+        .next {
+            text-align: center;
+            border: 1px solid rgba(128, 128, 128, .303);
+            border-radius: 6px;
+            margin: 2rem 1rem;
+        }
+
+        .button:hover {
+            background-color: #031f32c9;
+            color: #fff !important;
+        }
+
+        .gh:hover {
+            color: #fff !important;
+            background-color: #052d61f7;
+        }
+
+        .card {
+            display: flex;
+            column-gap: 5rem;
+            flex-wrap: wrap;
+            box-shadow: #32325d40 0 50px 100px -20px, #0000004d 0 30px 60px -30px, #0a254059 0 -2px 6px inset;
+            border: none;
+            border-radius: .75rem;
+            padding: 2rem;
+            justify-content: center;
+        }
+
+        .card-body {
+            background-color: #0661a7;
+            max-width: 50rem;
+            padding: .5rem .5rem .5rem .8rem;
+            box-shadow: none !important;
+            border: 1px solid grey;
+            border-radius: 1rem;
+            font-family: Mulish, sans-serif;
+            color: white;
+            flex: 1;
+        }
+
+        input[type=text],input[type=email] {
+            padding: 15px;
+            margin: 5px;
+            border-radius: 5px;
+            width:92%;
+        }
+        input[type="number"]{
+            padding: 15px;
+            margin: 5px;
+            border-radius: 5px;
+            width:92%;
+        }
+        
+
+        select {
+            margin: 5px;
+            padding: 15px;
+            width:97%;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            width: 98%;
+            background-color: #0661a7;
+            color: white;
+            line-height: 25px;
+            font-size: medium;
+        }
+
+        .items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            row-gap: 1.5rem;
+            column-gap: 1rem;
+        }
+
+        .item {
+            width: 350px;
+            max-height: 200px;
+            border: 1px solid rgb(219, 219, 219);
+            border-radius: 7px;
+            box-shadow: #959da533 0 8px 24px;
+        }
+
+        .foot {
+            padding: 10px;
+        }
+
+        @media screen and(min-width:780px) {
+            footer {
+                display:none;
+            }
+            
+            }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header logo" style="padding-right: 100px;"><img
+                src="https://bytesplash.in/assets/logo/ByteSplash_Logo.png" width="183px"
+                height="33px"><br><span>Training & Placement</span></div>
+        <div class="header home" style="margin-top: 15px;"><span><a href="#" class="an">Home</a></span></div>
+        <div class="header courses" style="margin-top: 15px;"><span><a href="#" class="an">Courses</a></span></div>
+        <div class="header contact" style="margin-top: 15px;">
+            <span><a href="#" class="an">Contact</a></span>
+        </div>
+        <div class="header contact" style="margin-top: 15px;">
+            <a href="#" class="an con">
+                <span>
+                    <span>
+                        <svg width="26px" height="24px" viewBox="-2.4 -2.4 28.80 28.80" fill="#0071bd"
+                            xmlns="http://www.w3.org/2000/svg" stroke="#0071bd">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M21.97 18.33C21.97 18.69 21.89 19.06 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C18.8 21.87 18.15 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C9.6 18.45 8.51 17.52 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.27 13.75 11.79 14.24 12.32 14.69C12.84 15.13 13.27 15.43 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z"
+                                    stroke="#0071bd" stroke-width="1.224" stroke-miterlimit="10"></path>
+                                <path d="M18.5 9C18.5 8.4 18.03 7.48 17.33 6.73C16.69 6.04 15.84 5.5 15 5.5"
+                                    stroke="#0071bd" stroke-width="1.224" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path d="M22 9C22 5.13 18.87 2 15 2" stroke="#0071bd" stroke-width="1.224"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </svg></span>+91 8660803099
+                </span>
+                </span>
+            </a>
+        </div>
+        <div class="header mail" style="margin-top: 15px;">
+            <a href="#" class="an gmail">
+                <span>
+                    <svg viewBox="0 0 22 20 " fill="#0071bd" width="16px" height="28px"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M3 8L8.44992 11.6333C9.73295 12.4886 10.3745 12.9163 11.0678 13.0825C11.6806 13.2293 12.3194 13.2293 12.9322 13.0825C13.6255 12.9163 14.2671 12.4886 15.5501 11.6333L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
+                                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg><span>
+                        enquires@bytesplash.in</a>
+            </span>
+            </span>
+        </div>
+    </header>
+    <div class="middle">
+        <div class="mid image">
+            <img src="https://bytesplash.in/assets/images/Designer-discuss.png" style="width: 100%;">
+        </div>
+        <div class="mid left">
+            <h2
+                style="font-weight: 700;color: #364146;font-size:2.2vw;line-height: 6vh;font-family: Open Sans, sans-serif;">
+                The Best Software Training And Placement Institute
+                In Marathahalli, Bengaluru </h2>
+            <h3 style="color: gray;font-family: Open Sans, sans-serif;">All Courses Included with the Student Dahsboard
+                wth the <a href="#" style="color: #055898;font-weight: 600;text-decoration:none">Byte Splash
+                    LMS,Learning Management System</a> for the students as the dashboard for the courses and its
+                assigments and daily class recordings. </h3><br>
+            <div><a class="gh get" href="#">Get Started</a></div><br>
+            <div>
+                <h3 style="color: gray;font-family: Open Sans, sans-serif;margin-right: 2%;">Courses</h3>
+            </div>
+            <div>
+                <a href=" /courses"><img style="width: 100%;"
+                        src="https://bytesplash.in/assets/images/courses-icons.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="next">
+        <span><svg width="60px" height="60px" viewBox="0 0 120 120" id="Layer_1" version="1.1" xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <style type="text/css">
+                        .st0 {
+                            fill: #E9F6FF;
+                        }
+
+                        .st1 {
+                            fill: #FFFFFF;
+                        }
+
+                        .st2 {
+                            fill: #4675FF;
+                        }
+
+                        .st3 {
+                            fill: #FFC54D;
+                        }
+
+                        .st4 {
+                            fill: #E8B04B;
+                        }
+
+                        .st5 {
+                            fill: #CECECE;
+                        }
+                    </style>
+                    <g>
+                        <path
+                            d="M103,94H17c-2.4,0-4.3-1.9-4.3-4.3V30.3c0-2.4,1.9-4.3,4.3-4.3H103c2.4,0,4.3,1.9,4.3,4.3v59.3 C107.3,92.1,105.3,94,103,94z"
+                            class="st0"></path>
+                        <path
+                            d="M65.5,83.8H26.9c-1.8,0-3.3-1.5-3.3-3.3V39.6c0-1.8,1.5-3.3,3.3-3.3h38.6c1.8,0,3.3,1.5,3.3,3.3v40.8 C68.8,82.3,67.3,83.8,65.5,83.8z"
+                            class="st1"></path>
+                        <g>
+                            <polygon
+                                points="98.5,50.1 88.2,55.3 77.9,50.1 65.2,75.6 73.1,74.8 77.2,81.6 88.2,59.7 99.2,81.6 103.3,74.8 111.2,75.6 "
+                                class="st2"></polygon>
+                            <circle cx="88.2" cy="50.6" r="16.8" class="st3"></circle>
+                            <circle cx="88.2" cy="50.6" r="13.2" class="st4"></circle>
+                        </g>
+                        <g>
+                            <path
+                                d="M41.1,63.1h-9.9c-0.8,0-1.4,0.6-1.4,1.4s0.6,1.4,1.4,1.4h9.9c0.8,0,1.4-0.6,1.4-1.4S41.9,63.1,41.1,63.1z"
+                                class="st5"></path>
+                            <path
+                                d="M61.1,56.3H31.2c-0.8,0-1.4,0.6-1.4,1.4s0.6,1.4,1.4,1.4h29.9c0.8,0,1.4-0.6,1.4-1.4S61.9,56.3,61.1,56.3z"
+                                class="st5"></path>
+                            <path
+                                d="M61.1,50.5H31.2c-0.8,0-1.4,0.6-1.4,1.4c0,0.8,0.6,1.4,1.4,1.4h29.9c0.8,0,1.4-0.6,1.4-1.4 C62.5,51.1,61.9,50.5,61.1,50.5z"
+                                class="st5"></path>
+                            <path
+                                d="M31.2,46.6h29.9c0.8,0,1.4-0.6,1.4-1.4s-0.6-1.4-1.4-1.4H31.2c-0.8,0-1.4,0.6-1.4,1.4S30.5,46.6,31.2,46.6z"
+                                class="st5"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg></span><br>
+        <span style="margin-bottom: 2rem;color: gray; font-family: Open Sans, sans-serif;">You can Verify the digital
+            certificate Here </span><button class="button"
+            style="border: 1px solid #0071bd;margin-bottom:1rem; background-color: #0071bd ; color: #fff;padding: .5rem 2rem;border-radius: 5px;"><span
+                style="line-height:22px;font-size:small" class="bt">Verify</span></button>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h3 style="text-align:center;">What we provide ?</h3>
+            <ul>
+                <li style="text-align:center;">We provide industry
+                    standard software training where the candidate can able to individually work with products following
+                    the real time scenarios that industries follow, It is like companies can pickup the right candidate
+                    with good technical skills </li><br>
+                <li style="text-align:center;">After all training we
+                    will access the candidate then placements will be provided for the candidate's to get in to their
+                    dream jobs. </li>
+            </ul>
+
+            <div style="text-align:center;"><span>Let's Dive in to Curriculum &nbsp;<span></div>
+        </div>
+        <div class="card-body">
+            <h3 class="" style=" text-align:center">Your path for a successful career!</h3>
+            <div class="inside" style="background-color: white; border-radius:5px;padding:10px">
+                <h3 style="color:#0071bd;text-align:center">NEW BATCH STARTS FROM JANUARY 2024</h3>
+                <h4 style="color: black;text-align:center">Submit Your Details,Our team will get back to you</h4>
+                <div>
+                    <form>
+                        <input type="text" required placeholder="Name*" width="100%"><br>
+                        <input type="email" required placeholder="Email Id*" width="100%"><br>
+                        <select>
+                            <option>
+                                +91
+                            </option>
+                            <option>+92</option>
+                            <option>+18</option>
+                            <option>+29</option>
+                        </select>
+                        <input type="number" placeholder="Mobile No*" required><br>
+                        <input type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 style="text-align: center;font-family: Mulish, sans-serif;font-size: 2rem;padding: .2rem; font-weight:100">A
+        Better Program designed for you offline and online of your comfort</h2><br>
+    <div class="items">
+
+        <div class="item">
+            <div><img src="https://bytesplash.in/assets/images/aptitude-and-reasoning.png" style="width: fit-content;">
+            </div>
+            <div>
+                <h4>Aptitude and Reasoning</h4>
+                <p>Have a structured learning with the multiple
+                    scenario based questions</p>
+            </div>
+        </div>
+        <div class="item">
+            <div><img height="75px" src="https://bytesplash.in/assets/images/coding%20and%20programming.png"
+                    style="width: fit-content;">
+            </div>
+            <div>
+                <h4>Coding with Programming</h4>
+                <p>A well planned coding sessions with real time examples</p>
+            </div>
+        </div>
+        <div class="item">
+            <div><img src="https://bytesplash.in/assets/images/communication-resized.png" style="width: fit-content;">
+            </div>
+            <div>
+                <h4>Soft Skills & Communication</h4>
+                <p>Industry orientes soft skills and communication trainings will be provided</p>
+            </div>
+        </div>
+        <div class="item">
+            <div><img src="https://bytesplash.in/assets/images/real%20time%20projects.png" style="width: fit-content;">
+            </div>
+            <div>
+                <h4>Real Time Projects</h4>
+                <p>Have a pactical approach and guidance to the real time industry oriented projects</p>
+            </div>
+        </div>
+        <div class="item">
+            <div><img src="https://bytesplash.in/assets/images/mock_interviews-resized.png" style="width: fit-content;">
+            </div>
+            <div>
+                <h4>Mock Interviews</h4>
+                <p>Multiple mock interview sessions in order to make every candidate up to the mark</p>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: #0071bd; color:white;padding:10px">
+        <p style="text-align:center;"><span class="foot">Home</span><span class="foot">Courses</span><span
+                class="foot">Contact us</span><span class="foot">Verify</span></p>
+        <p style="text-align:center;"><span class="foot">Privacy Policy</span><span class="foot">All Rights
+                Reserved&reg;</span><span class="foot">bytesplash.in</span></p>
+        <p style="text-align:center;">Design and developed by bytesplash team.</p>
+    </footer>
+
+</body>
+
+</html>

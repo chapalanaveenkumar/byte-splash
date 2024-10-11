@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display:flex;
+            column-gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .sub{
+            background-color: black;
+            border-radius: 5px;
+            padding:150px;
+            margin: 5px;
+        }
+        .media{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .smedia{
+            max-width: 25%;
+        }
+        @media screen (min-width:768px) {
+            .media{
+                display: none;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub s1"></div>
+        <div class="sub s2"></div>
+        <div class="sub s3"></div>
+        <div class="sub s4"></div>
+        <div class="sub s5"></div>
+        <div class="sub s6"></div>
+    </div>
+    <div class="media">
+        <div class="smedia"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore temporibus error quo maiores similique ducimus! Laboriosam itaque quae cum velit unde. Aliquam eum repellendus fugit labore, asperiores deleniti sunt perferendis?</p></div>
+        <div class="smedia"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore temporibus error quo maiores similique ducimus! Laboriosam itaque quae cum velit unde. Aliquam eum repellendus fugit labore, asperiores deleniti sunt perferendis?</p></div>
+        <div class="smedia"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore temporibus error quo maiores similique ducimus! Laboriosam itaque quae cum velit unde. Aliquam eum repellendus fugit labore, asperiores deleniti sunt perferendis?</p></div>
+        <div class="smedia"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore temporibus error quo maiores similique ducimus! Laboriosam itaque quae cum velit unde. Aliquam eum repellendus fugit labore, asperiores deleniti sunt perferendis?</p></div>
+    </div>
+</body>
+</html>
